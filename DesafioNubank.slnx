@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Folder Name="/SolutionFolder/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="DesafioNubank.Api\DesafioNubank.Api.csproj" Type="Classic C#" />
+</Solution>
