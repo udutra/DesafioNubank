@@ -1,5 +1,4 @@
-using DesafioNubank.Api;
-using DesafioNubank.Api.Infra;
+using DesafioNubank.Api.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

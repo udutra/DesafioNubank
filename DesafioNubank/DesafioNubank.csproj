@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>f4cbb95d-6edc-441d-aa98-0593ecc56e8a</UserSecretsId>
+        <RootNamespace>DesafioNubank.Api</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,10 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-      <Folder Include="Infra\Migrations\" />
-      <Folder Include="Repositories\" />
-      <Folder Include="Services\" />
+      <Folder Include="Infrastructure\Data\Migrations\" />
     </ItemGroup>
 
 </Project>
