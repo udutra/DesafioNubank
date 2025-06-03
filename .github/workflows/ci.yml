@@ -1,0 +1,38 @@
+name: Testes Automatizados .NET
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Fazer checkout do código
+      - name: Checkout do código
+        uses: actions/checkout@v4
+      
+      # Configurar .NET SDK
+      - name: Instalar .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.300' # Ajuste para a versão do seu projeto
+      
+      # Restaurar dependências do projeto
+      - name: Restaurar dependências
+        run: dotnet restore
+      
+      # Construir a solução
+      - name: Build da solução
+        run: dotnet build --no-restore --configuration Release
+      
+      # Executar testes unitários
+      - name: Executar testes
+        run: dotnet test --no-build --configuration Release --filter "Category=UnitTest" --verbosity normal
+
+      # Executar testes de integração
+      - name: Run integration tests
+        run: dotnet test --no-build --configuration Release --filter "Category=IntegrationTest" --verbosity normal

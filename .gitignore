@@ -357,3 +357,6 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+DesafioNubank.Infrastructure/Data/Migrations/20250602225937_Initial.cs
+DesafioNubank.Infrastructure/Data/Migrations/20250602225937_Initial.Designer.cs
+DesafioNubank.Infrastructure/Data/Migrations/AppDbContextModelSnapshot.cs

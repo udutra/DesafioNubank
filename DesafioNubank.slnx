@@ -1,6 +1,12 @@
 ﻿<Solution>
   <Folder Name="/SolutionFolder/">
     <File Path=".gitignore" />
+    <File Path="Readme.md" />
+    <File Path=".github\workflows\ci.yml" />
   </Folder>
-  <Project Path="DesafioNubank\DesafioNubank.csproj" Type="Classic C#" />
+  <Project Path="DesafioNubank.Api\DesafioNubank.Api.csproj" Type="Classic C#" />
+  <Project Path="DesafioNubank.Application\DesafioNubank.Application.csproj" Type="Classic C#" />
+  <Project Path="DesafioNubank.Domain\DesafioNubank.Domain.csproj" Type="Classic C#" />
+  <Project Path="DesafioNubank.Infrastructure\DesafioNubank.Infrastructure.csproj" Type="Classic C#" />
+  <Project Path="DesafioNubank.Tests\DesafioNubank.Tests.csproj" Type="Classic C#" />
 </Solution>
