@@ -35,4 +35,4 @@ jobs:
 
       # Executar testes de integração
       - name: Run integration tests
-        run: dotnet test --no-build --configuration Release --filter "Category=IntegrationTest" --verbosity normal
+        run: dotnet test DesafioNubank.sln --no-build --configuration Release --filter "Category=IntegrationTest" --verbosity normal
