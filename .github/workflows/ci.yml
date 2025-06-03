@@ -23,15 +23,15 @@ jobs:
       
       # Restaurar dependências do projeto
       - name: Restaurar dependências
-        run: dotnet restore
+        run: dotnet restore DesafioNubank.sln
       
       # Construir a solução
       - name: Build da solução
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build DesafioNubank.sln --no-restore --configuration Release
       
       # Executar testes unitários
       - name: Executar testes
-        run: dotnet test --no-build --configuration Release --filter "Category=UnitTest" --verbosity normal
+        run: dotnet test DesafioNubank.sln --no-build --configuration Release --filter "Category=UnitTest" --verbosity normal
 
       # Executar testes de integração
       - name: Run integration tests
